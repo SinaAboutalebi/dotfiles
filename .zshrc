@@ -70,7 +70,7 @@ ZSH_THEME="simple"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ansible ssh-agent colorize colored-man-pages debian docker emoji kubectl tmux history)
+plugins=(git ansible ssh-agent colorize colored-man-pages debian docker emoji kubectl tmux)
 
 #zstyle :omz:plugins:ssh-agent identities SinaKey
 
@@ -106,6 +106,16 @@ export PATH="$PATH:/usr/local/go/bin"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+
 alias cat='batcat --plain --theme "Monokai Extended Origin"'
 
-#neofetch --colors 7 1 4 1 7 14
+alias youtube-dl='python3 /usr/local/bin/youtube-dl'
+alias youtube-mp3='youtube-dl -x --audio-format mp3'
+
+alias timestamp='date +%Y-%m-%dT%H-%M-%S'
+alias mkdir='mkdir -pv'
+alias ..='cd ..' # i'm sometimes lazy :)
+alias mv='mv -i'
+alias cp='cp -i'
+alias n="nano"
